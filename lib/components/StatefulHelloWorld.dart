@@ -15,7 +15,8 @@ class _helloWorldState extends State<StatefulHelloWorld> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return Scaffold(
+        body: Container(
       height: MediaQuery.of(context).size.height,
       width: MediaQuery.of(context).size.width,
       color: Colors.blue,
@@ -38,6 +39,7 @@ class _helloWorldState extends State<StatefulHelloWorld> {
             textAlign: TextAlign.center,
           ),
         ],
+      ),
       ),
     );
   }
